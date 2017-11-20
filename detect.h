@@ -5,6 +5,7 @@
 #ifndef CELEBRITY_FISHY_FACES_DETECT_H
 #define CELEBRITY_FISHY_FACES_DETECT_H
 
+#include <opencv2/core/core.hpp>
 #include <opencv2/objdetect.hpp>
 
 extern cv::CascadeClassifier cascadeClassifier;

@@ -5,6 +5,8 @@
 #include "detect.h"
 #include <iostream>
 
+#include <opencv2/imgproc/imgproc.hpp>
+
 cv::CascadeClassifier cascadeClassifier;
 
 void initialize_clasifier(std::string path) {
@@ -12,7 +14,8 @@ void initialize_clasifier(std::string path) {
     std::cout << "[Cascade Classifier]: initialized" << std::endl;
 }
 
-std::vector<cv::Rect_<int>> detect_faces() {
-
+std::vector<cv::Rect_<int>> detect_faces(cv::Mat image) {
+    cv::Mat gray;
+    cv::cvtColor(image, gray, CV_BGR2GRAY);
     // cascadeClassifier.detectMultiScale();
 }

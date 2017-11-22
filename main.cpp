@@ -2,7 +2,6 @@
 #include <opencv2/highgui/highgui.hpp>
 
 #include <iostream>
-#include <getopt.h>
 
 #include "detect.h"
 #include "options.h"

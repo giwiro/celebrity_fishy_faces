@@ -52,3 +52,6 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+
+# Data sets
+thumbnails_features_deduped_sample/

@@ -11,6 +11,7 @@
 extern cv::CascadeClassifier cascadeClassifier;
 
 void initialize_clasifier(std::string path);
-std::vector<cv::Rect_<int>> detect_faces();
+std::vector<cv::Rect_<int>> detect_faces(cv::Mat image);
+cv::Mat print_faces(const std::vector<cv::Rect_<int>> faces, const cv::Mat image);
 
 #endif //CELEBRITY_FISHY_FACES_DETECT_H

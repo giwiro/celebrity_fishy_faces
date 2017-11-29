@@ -4,7 +4,6 @@ import os
 import csv
 import cv2
 import time
-import pprint
 
 # Parsing arguments
 parser = argparse.ArgumentParser()
@@ -52,7 +51,7 @@ def process_folder(folder):
 		extension = file[1][len(file[1]) - 4:]
 		img = cv2.imread(os.path.join(base_folder, folder, file[1]))
 		gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-		faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+		faces = face_cascade.detectMultiScale(gray)
 
 		if len(faces) > 0:
 			# Asuming there's one face per file and it's the first found

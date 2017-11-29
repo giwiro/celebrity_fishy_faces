@@ -54,5 +54,7 @@ fabric.properties
 
 
 # Data sets
+data/
 thumbnails_features_deduped_sample/
 train_dataset/
+csv/

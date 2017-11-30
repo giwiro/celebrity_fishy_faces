@@ -2,7 +2,6 @@
 import argparse
 import os
 import csv
-import pprint
 
 # Parsing arguments
 parser = argparse.ArgumentParser()

@@ -56,5 +56,6 @@ fabric.properties
 # Data sets
 data/
 thumbnails_features_deduped_sample/
+thumbnails_features_deduped_publish/
 train_dataset/
 csv/

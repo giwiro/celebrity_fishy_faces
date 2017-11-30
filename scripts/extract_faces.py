@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import argparse
 import os
 import csv
@@ -33,6 +34,7 @@ if len(subfolders) < 1:
 if not os.path.exists(out_folder):
 	os.makedirs(out_folder)
 
+# TODO: can be multithread in order to reduce the elapsed time
 def process_folder(folder):
 	#  Validate if it's a file and with an image extension
 	files = [(idx, f) for idx, f in enumerate(os.listdir(os.path.join(base_folder, folder))) 
@@ -80,7 +82,7 @@ end_time = time.time()
 acum_total = 0
 acum_assert = 0
 acum_failure = 0
-print(f"\nElapsed time: {end_time - start_time}")
+print(f"\nElapsed time: {'{0:.2f}'.format(end_time - start_time)}s")
 print("Results:\n")
 
 for s in stats:
